@@ -1,0 +1,140 @@
+// ===========================================
+// Footer Project
+// ===========================================
+
+.c-footer {
+  &__main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 64px;
+    align-items: start;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: $spacing-3xl;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      width: 88px;
+      height: 36px;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+    color: $color-body-muted;
+    margin: 0;
+    max-width: 354px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-img {
+    width: 160px;
+    height: 32px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 64px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: $spacing-xl;
+    }
+  }
+
+  &__link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__link-title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-base;
+    color: $color-body;
+    margin: 0;
+  }
+
+  &__link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__link-item {
+    margin: 0;
+  }
+
+  &__link {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+    color: $color-body-muted;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:link,
+    &:visited {
+      color: $color-body-muted;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: $color-body;
+      text-decoration: none;
+    }
+  }
+
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__newsletter-title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-base;
+    color: $color-body;
+    margin: 0;
+  }
+
+  &__newsletter-form {
+    display: flex;
+    gap: 16px;
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+    }
+
+    .c-input {
+      width: 300px;
+      height: 72px;
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+// ===========================================
+// Rating Component
+// ===========================================
+
+.c-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px; 
+
+  @include up("wide") {
+    gap: 6px; 
+  }
+
+  &__star {
+    width: 16px; 
+    height: 16px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &--large {
+      width: 20px; 
+      height: 20px; 
+
+      @include up("wide") {
+        width: 28px; 
+        height: 28px; 
+      }
+    }
+
+    &--filled {
+      svg {
+        width: 16px; 
+        height: 16px; 
+        fill: #FFA800; 
+        transition: all 0.2s ease;
+      }
+
+      &.c-rating__star--large {
+        svg {
+          width: 20px; 
+          height: 20px; 
+          fill: #FFA800; 
+
+          @include up("wide") {
+            width: 28px; 
+            height: 28px; 
+            filter: drop-shadow(0 0 8px rgba(255, 168, 0, 0.6)); 
+          }
+        }
+      }
+    }
+
+    &--empty {
+      svg {
+        width: 16px; 
+        height: 16px; 
+        fill: #E5E5E5; 
+        transition: all 0.2s ease;
+      }
+
+      &.c-rating__star--large {
+        svg {
+          width: 20px; 
+          height: 20px; 
+
+          @include up("wide") {
+            width: 28px; 
+            height: 28px; 
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

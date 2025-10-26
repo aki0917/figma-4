@@ -1,0 +1,29 @@
+// ===========================================
+// Header Layout
+// ===========================================
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-fixed;
+  background-color: transparent;
+  transition: all 0.3s ease;
+
+  &.l-header--scrolled {
+    background-color: rgba($color-body, 0.95);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.l-header__container {
+  padding: $spacing-lg 0; 
+  max-width: 1360px;
+  margin: 0 auto;
+
+  @include up("wide") {
+    padding: $spacing-xl 0; 
+  }
+}
+

@@ -1,0 +1,81 @@
+// ===========================================
+// Variables
+// ===========================================
+
+// Colors
+$color-primary: #7B61FF;
+$color-primary-muted: #F6F4FF;
+$color-white: #FFFFFF;
+$color-body: #161414;
+$color-body-muted: #979797;
+$color-red: #FF0000;
+$color-yellow: #FFA800;
+$color-footer-bg: #F9F9F9;
+
+// Typography
+$font-family-primary: 'Poppins', sans-serif;
+
+$font-size-xxs: 10px;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-2xl: 32px;
+$font-size-3xl: 48px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+
+$line-height-tight: 1.29;
+$line-height-base: 1.43;
+$line-height-relaxed: 1.5;
+$line-height-loose: 2;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 64px;
+$spacing-3xl: 120px;
+
+// Border radius
+$border-radius-sm: 12px;
+$border-radius-md: 24px;
+$border-radius-lg: 54px;
+$border-radius-full: 999px;
+
+// Breakpoints
+$breakpoints: (
+  "tab": 769px,
+  "tab-large": 960px,
+  "pc": 1025px,       
+  "pc-large": 1440px,  
+  "wide": 1920px 
+);
+
+@mixin up($bp) {
+  @media (min-width: map-get($breakpoints, $bp)) {
+    @content;
+  }
+}
+
+// Container max-widths
+$container-sm: 640px;
+$container-md: 768px;
+$container-lg: 1024px;
+$container-xl: 1280px;
+$container-2xl: 1536px;
+
+// Z-index
+$z-dropdown: 1000;
+$z-sticky: 1020;
+$z-fixed: 1030;
+$z-modal-backdrop: 1040;
+$z-modal: 1050;
+$z-popover: 1060;
+$z-tooltip: 1070;
+

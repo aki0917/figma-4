@@ -1,0 +1,72 @@
+// ===========================================
+// Input Component
+// ===========================================
+
+.c-input {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm; 
+  padding: $spacing-sm; 
+  background-color: $color-white;
+  border-radius: $border-radius-sm;
+  transition: all 0.2s ease;
+
+  &:focus-within {
+    box-shadow: 0 0 0 2px $color-primary;
+  }
+
+  @include up("wide") {
+    gap: $spacing-md; 
+    padding: $spacing-md; 
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFA800;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: baseline;
+    min-width: 0;
+  }
+
+  &__label {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+    color: $color-body-muted;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__field {
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-relaxed;
+    color: $color-body;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+
+    &::placeholder {
+      color: $color-body;
+    }
+  }
+}
+
+
+
+
+

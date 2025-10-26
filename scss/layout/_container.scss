@@ -1,0 +1,37 @@
+// ===========================================
+// Container
+// ===========================================
+
+.l-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+
+  
+
+  @include up("pc") {
+    max-width: 1024px; 
+  }
+
+  @include up("pc-large") {
+    max-width: 1280px; 
+  }
+
+  @include up("wide") {
+    max-width: 1360px; 
+    padding: 0 $spacing-lg;
+  }
+}
+
+.l-header__container {
+  @extend .l-container;
+}
+
+.l-section__container {
+  @extend .l-container;
+}
+
+.l-footer__container {
+  @extend .l-container;
+}
+

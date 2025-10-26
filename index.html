@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Platform - Discover the most engaging places</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="l-header">
+        <div class="l-header__container">
+            <div class="c-header">
+                <div class="c-header__logo">
+                    <img src="assets/images/logo.svg" alt="Travel Platform" class="c-header__logo-img">
+                </div>
+                
+                <button class="c-mobile-menu-btn">
+                    <span class="c-mobile-menu-btn__line"></span>
+                    <span class="c-mobile-menu-btn__line"></span>
+                    <span class="c-mobile-menu-btn__line"></span>
+                </button>
+                
+                <nav class="c-header__nav">
+                    <ul class="c-header__menu">
+                        <li class="c-header__menu-item c-header__menu-item--active">
+                            <a href="#" class="c-header__menu-link">home</a>
+                        </li>
+                        <li class="c-header__menu-item">
+                            <a href="#" class="c-header__menu-link">hotels</a>
+                        </li>
+                        <li class="c-header__menu-item">
+                            <a href="#" class="c-header__menu-link">restaurants</a>
+                        </li>
+                        <li class="c-header__menu-item">
+                            <a href="#" class="c-header__menu-link">tours</a>
+                        </li>
+                        <li class="c-header__menu-item">
+                            <a href="#" class="c-header__menu-link">destinations</a>
+                        </li>
+                        <li class="c-header__menu-item">
+                            <a href="#" class="c-header__menu-link">activities</a>
+                        </li>
+                        <li class="c-header__menu-item">
+                            <a href="#" class="c-header__menu-link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="c-header__user">
+                    <div class="c-user-info">
+                        <div class="c-user-info__text">
+                            <span class="c-user-info__greeting">Holla,</span>
+                            <span class="c-user-info__name">Ales Nesetril</span>
+                        </div>
+                        <div class="c-user-info__avatar">
+                            <img src="assets/images/user-avatar.png" alt="User Avatar" class="c-user-info__avatar-img">
+                            <span class="c-user-info__notification"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="l-main">
+        <!-- Hero Section -->
+        <section class="l-hero">
+            <div class="l-hero__bg">
+                <img src="assets/images/hero-bg.png" alt="Hero Background" class="l-hero__bg-img">
+            </div>
+            <div class="l-hero__container">
+                <div class="c-hero">
+                    <h1 class="c-hero__title">Discover the most engaging places</h1>
+                    <button class="c-btn c-btn--primary c-btn--large">
+                        <span class="c-btn__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7.5V9H21ZM15 13.5V15.5L21 16V14H15ZM3 13.5H9V15.5L3 16V13.5ZM9 7.5V9H3V7L9 7.5ZM12 8C15.87 8 19 11.13 19 15C19 18.87 15.87 22 12 22C8.13 22 5 18.87 5 15C5 11.13 8.13 8 12 8ZM12 10C9.24 10 7 12.24 7 15C7 17.76 9.24 20 12 20C14.76 20 17 17.76 17 15C17 12.24 14.76 10 12 10Z" fill="#FFFFFF"/>
+                            </svg>
+                        </span>
+                        <span class="c-btn__text">Discover on 3D Globe</span>
+                    </button>
+                </div>
+                
+                <!-- Search Form -->
+                <div class="c-search">
+                    <div class="c-search__form">
+                        <div class="c-search__field">
+                            <div class="c-input">
+                                <span class="c-input__icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z" fill="#FFA800"/>
+                                    </svg>
+                                </span>
+                                <div class="c-input__content">
+                                    <label class="c-input__label">Location</label>
+                                    <input type="text" class="c-input__field" placeholder="Explore nearby destinations">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="c-search__separator"></div>
+                        
+                        <div class="c-search__field">
+                            <div class="c-input">
+                                <span class="c-input__icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5.5 21C4.90905 21 4.32389 20.8836 3.77792 20.6575C3.23196 20.4313 2.73588 20.0998 2.31802 19.682C1.90016 19.2641 1.56869 18.768 1.34254 18.2221C1.1164 17.6761 1 17.0909 1 16.5C1 15.9091 1.1164 15.3239 1.34254 14.7779C1.56869 14.232 1.90016 13.7359 2.31802 13.318C2.73588 12.9002 3.23196 12.5687 3.77792 12.3425C4.32389 12.1164 4.90905 12 5.5 12C6.69347 12 7.83807 12.4741 8.68198 13.318C9.52589 14.1619 10 15.3065 10 16.5C10 17.6935 9.52589 18.8381 8.68198 19.682C7.83807 20.5259 6.69347 21 5.5 21ZM5.5 19C6.16304 19 6.79893 18.7366 7.26777 18.2678C7.73661 17.7989 8 17.163 8 16.5C8 15.837 7.73661 15.2011 7.26777 14.7322C6.79893 14.2634 6.16304 14 5.5 14C4.83696 14 4.20107 14.2634 3.73223 14.7322C3.26339 15.2011 3 15.837 3 16.5C3 17.163 3.26339 17.7989 3.73223 18.2678C4.20107 18.7366 4.83696 19 5.5 19ZM18.5 21C17.9091 21 17.3239 20.8836 16.7779 20.6575C16.232 20.4313 15.7359 20.0998 15.318 19.682C14.9002 19.2641 14.5687 18.768 14.3425 18.2221C14.1164 17.6761 14 17.0909 14 16.5C14 15.9091 14.1164 15.3239 14.3425 14.7779C14.5687 14.232 14.9002 13.7359 15.318 13.318C15.7359 12.9002 16.232 12.5687 16.7779 12.3425C17.3239 12.1164 17.9091 12 18.5 12C19.6935 12 20.8381 12.4741 21.682 13.318C22.5259 14.1619 23 15.3065 23 16.5C23 17.6935 22.5259 18.8381 21.682 19.682C20.8381 20.5259 19.6935 21 18.5 21ZM18.5 19C19.163 19 19.7989 18.7366 20.2678 18.2678C20.7366 17.7989 21 17.163 21 16.5C21 15.837 20.7366 15.2011 20.2678 14.7322C19.7989 14.2634 19.163 14 18.5 14C17.837 14 17.2011 14.2634 16.7322 14.7322C16.2634 15.2011 16 15.837 16 16.5C16 17.163 16.2634 17.7989 16.7322 18.2678C17.2011 18.7366 17.837 19 18.5 19ZM11.023 10.305L13 12V18H11V13L8.281 10.734C8.03904 10.5677 7.83666 10.3502 7.68822 10.0969C7.53977 9.84363 7.44892 9.56076 7.4221 9.26841C7.39528 8.97605 7.43315 8.68137 7.53303 8.4053C7.6329 8.12923 7.79233 7.87853 8 7.671L10.828 4.843C11.0137 4.6572 11.2342 4.50981 11.4769 4.40925C11.7197 4.30869 11.9798 4.25693 12.2425 4.25693C12.5052 4.25693 12.7653 4.30869 13.0081 4.40925C13.2508 4.50981 13.4713 4.6572 13.657 4.843L15.071 6.257C16.13 7.31982 17.5038 8.01248 18.988 8.232L18.978 10.247C16.9642 10.0152 15.0884 9.10742 13.657 7.672L11.023 10.305ZM16 5C15.4696 5 14.9609 4.78929 14.5858 4.41421C14.2107 4.03914 14 3.53043 14 3C14 2.46957 14.2107 1.96086 14.5858 1.58579C14.9609 1.21071 15.4696 1 16 1C16.5304 1 17.0391 1.21071 17.4142 1.58579C17.7893 1.96086 18 2.46957 18 3C18 3.53043 17.7893 4.03914 17.4142 4.41421C17.0391 4.78929 16.5304 5 16 5Z" fill="#FFA800"/>
+                                    </svg>
+                                </span>
+                                <div class="c-input__content">
+                                    <label class="c-input__label">Activity</label>
+                                    <input type="text" class="c-input__field" placeholder="All Activities">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="c-search__separator"></div>
+                        
+                        <div class="c-search__field">
+                            <div class="c-input">
+                                <span class="c-input__icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M19 3H18V1H16V3H8V1H6V3H5C3.89 3 3.01 3.9 3.01 5L3 19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V8H19V19ZM7 10H12V15H7V10Z" fill="#FFA800"/>
+                                    </svg>
+                                </span>
+                                <div class="c-input__content">
+                                    <label class="c-input__label">When</label>
+                                    <input type="text" class="c-input__field" placeholder="Choose a Date">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="c-search__separator"></div>
+                        
+                        <div class="c-search__field">
+                            <div class="c-input">
+                                <span class="c-input__icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M16 4C18.2 4 20 5.8 20 8S18.2 12 16 12C13.8 12 12 10.2 12 8S13.8 4 16 4ZM16 14C18.67 14 24 15.34 24 18V20H8V18C8 15.34 13.33 14 16 14ZM6 6C7.1 6 8 6.9 8 8S7.1 10 6 10 4 9.1 4 8 4.9 6 6 6ZM6 12C8.21 12 12 12.9 12 15V17H0V15C0 12.9 3.79 12 6 12Z" fill="#FFA800"/>
+                                    </svg>
+                                </span>
+                                <div class="c-input__content">
+                                    <label class="c-input__label">Guests</label>
+                                    <input type="text" class="c-input__field" placeholder="1 guest">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="c-search__btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91 3 9.5S5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14Z" fill="#FFFFFF"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Destinations -->
+        <section class="l-section">
+            <div class="l-section__container">
+                <div class="c-section">
+                    <h2 class="c-section__title">Popular Destinations</h2>
+                    <div class="c-section__content">
+                        <div class="c-destinations">
+                            <div class="c-destinations__item">
+                                <div class="c-destinations__img">
+                                    <img src="assets/images/destination-big-sur.png" alt="Big Sur" class="c-destinations__img-element">
+                                </div>
+                                <div class="c-destinations__info">
+                                    <h3 class="c-destinations__name">Big Sur</h3>
+                                    <p class="c-destinations__location">California, USA</p>
+                                </div>
+                            </div>
+                            
+                            <div class="c-destinations__item">
+                                <div class="c-destinations__img">
+                                    <img src="assets/images/destination-prescott.png" alt="Prescott" class="c-destinations__img-element">
+                                </div>
+                                <div class="c-destinations__info">
+                                    <h3 class="c-destinations__name">Prescott</h3>
+                                    <p class="c-destinations__location">Arizona, USA</p>
+                                </div>
+                            </div>
+                            
+                            <div class="c-destinations__item">
+                                <div class="c-destinations__img">
+                                    <img src="assets/images/destination-fort-mayers.png" alt="Fort Mayers" class="c-destinations__img-element">
+                                </div>
+                                <div class="c-destinations__info">
+                                    <h3 class="c-destinations__name">Fort Mayers</h3>
+                                    <p class="c-destinations__location">Florida, USA</p>
+                                </div>
+                            </div>
+                            
+                            <div class="c-destinations__item">
+                                <div class="c-destinations__img">
+                                    <img src="assets/images/destination-tucson.png" alt="Tucson" class="c-destinations__img-element">
+                                </div>
+                                <div class="c-destinations__info">
+                                    <h3 class="c-destinations__name">Tucson</h3>
+                                    <p class="c-destinations__location">Arizona, USA</p>
+                                </div>
+                            </div>
+                            
+                            <div class="c-destinations__item">
+                                <div class="c-destinations__img">
+                                    <img src="assets/images/destination-st-joseph.png" alt="St. Joseph" class="c-destinations__img-element">
+                                </div>
+                                <div class="c-destinations__info">
+                                    <h3 class="c-destinations__name">St. Joseph</h3>
+                                    <p class="c-destinations__location">Michigan, USA</p>
+                                </div>
+                            </div>
+                            
+                            <div class="c-destinations__item">
+                                <div class="c-destinations__img">
+                                    <img src="assets/images/destination-madrid.png" alt="Madrid" class="c-destinations__img-element">
+                                </div>
+                                <div class="c-destinations__info">
+                                    <h3 class="c-destinations__name">Madrid</h3>
+                                    <p class="c-destinations__location">Spain</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hotels and Restaurants -->
+        <section class="l-section">
+            <div class="l-section__container">
+                <div class="c-section">
+                    <div class="c-section__header">
+                        <h2 class="c-section__title">Hotels and Restaurants</h2>
+                        <button class="c-btn c-btn--secondary">
+                            <span class="c-btn__text">View all</span>
+                            <span class="c-btn__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 12L16 12M12 8L16 12L12 16" stroke="#7B61FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="c-section__content">
+                        <div class="c-hotels">
+                            <div class="c-hotels__item">
+                                <div class="c-hotels__img">
+                                    <img src="assets/images/hotel-santa-rosa.png" alt="Monastero Santa Rosa Hotel" class="c-hotels__img-element">
+                                </div>
+                                <div class="c-hotels__info">
+                                    <h3 class="c-hotels__name">Monastero Santa Rosa Hotel</h3>
+                                    <div class="c-hotels__meta">
+                                        <div class="c-hotels__location">
+                                            <span class="c-hotels__location-icon">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z" fill="#979797"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-hotels__location-text">Salerno, Italy</span>
+                                        </div>
+                                        <div class="c-rating">
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="c-hotels__item">
+                                <div class="c-hotels__img">
+                                    <img src="assets/images/hotel-tremezzo.png" alt="Grand Hotel Tremezzo" class="c-hotels__img-element">
+                                </div>
+                                <div class="c-hotels__info">
+                                    <h3 class="c-hotels__name">Grand Hotel Tremezzo</h3>
+                                    <div class="c-hotels__meta">
+                                        <div class="c-hotels__location">
+                                            <span class="c-hotels__location-icon">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z" fill="#979797"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-hotels__location-text">Lake Como, Italy</span>
+                                        </div>
+                                        <div class="c-rating">
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--empty">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--empty">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="c-hotels__item">
+                                <div class="c-hotels__img">
+                                    <img src="assets/images/hotel-oberoi.png" alt="The Oberoi Udaivilas" class="c-hotels__img-element">
+                                </div>
+                                <div class="c-hotels__info">
+                                    <h3 class="c-hotels__name">The Oberoi Udaivilas, Udaipur</h3>
+                                    <div class="c-hotels__meta">
+                                        <div class="c-hotels__location">
+                                            <span class="c-hotels__location-icon">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z" fill="#97979"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-hotels__location-text">Udaipur, India</span>
+                                        </div>
+                                        <div class="c-rating">
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--empty">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="c-hotels__item">
+                                <div class="c-hotels__img">
+                                    <img src="assets/images/hotel-beverly-hills.png" alt="AKA Beverly Hills" class="c-hotels__img-element">
+                                </div>
+                                <div class="c-hotels__info">
+                                    <h3 class="c-hotels__name">AKA Beverly Hills</h3>
+                                    <div class="c-hotels__meta">
+                                        <div class="c-hotels__location">
+                                            <span class="c-hotels__location-icon">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z" fill="#979797"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-hotels__location-text">Los Angeles, United States</span>
+                                        </div>
+                                        <div class="c-rating">
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--filled">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--empty">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-rating__star c-rating__star--empty">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968Z" fill="#FFA800"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips -->
+        <section class="l-section">
+            <div class="l-section__container">
+                <div class="c-section">
+                    <div class="c-section__header">
+                        <h2 class="c-section__title">Travel Tips and Advice</h2>
+                        <button class="c-btn c-btn--secondary">
+                            <span class="c-btn__text">View all</span>
+                            <span class="c-btn__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 12L16 12M12 8L16 12L12 16" stroke="#7B61FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="c-section__content">
+                        <div class="c-travel-tips">
+                            <div class="c-travel-tips__item">
+                                <div class="c-travel-tips__img">
+                                    <img src="assets/images/travel-tip-ice-cream.png" alt="East Village Ice Cream Crawl" class="c-travel-tips__img-element">
+                                </div>
+                                <div class="c-travel-tips__content">
+                                    <h3 class="c-travel-tips__title">East Village Ice Cream Crawl</h3>
+                                    <p class="c-travel-tips__text">We will stop at five different world-class ice cream shops on this 1.5 mile 1.5 hour tour. At each ice cream store we'll explore the story behind the business and see what makes the ice cream unique as you savor every…</p>
+                                    <div class="c-travel-tips__meta">
+                                        <div class="c-travel-tips__meta-item">
+                                            <span class="c-travel-tips__meta-icon">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M19 3H18V1H16V3H8V1H6V3H5C3.89 3 3.01 3.9 3.01 5L3 19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V8H19V19ZM7 10H12V15H7V10Z" fill="#979797"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-travel-tips__meta-text">Today</span>
+                                        </div>
+                                        <div class="c-travel-tips__meta-item">
+                                            <span class="c-travel-tips__meta-icon">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#979797"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-travel-tips__meta-text">Maria Philips</span>
+                                        </div>
+                                        <div class="c-travel-tips__meta-item">
+                                            <span class="c-travel-tips__meta-icon">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" fill="#979797"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-travel-tips__meta-text">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="c-travel-tips__item">
+                                <div class="c-travel-tips__img">
+                                    <img src="assets/images/travel-tip-brooklyn.png" alt="Brooklyn Bridge cinematic photo walk" class="c-travel-tips__img-element">
+                                </div>
+                                <div class="c-travel-tips__content">
+                                    <h3 class="c-travel-tips__title">Brooklyn Bridge cinematic photo walk</h3>
+                                    <p class="c-travel-tips__text">This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I'm always open to capture clients at different locations upon request for an additional charge.</p>
+                                    <div class="c-travel-tips__meta">
+                                        <div class="c-travel-tips__meta-item">
+                                            <span class="c-travel-tips__meta-icon">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M19 3H18V1H16V3H8V1H6V3H5C3.89 3 3.01 3.9 3.01 5L3 19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V8H19V19ZM7 10H12V15H7V10Z" fill="#979797"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-travel-tips__meta-text">Today</span>
+                                        </div>
+                                        <div class="c-travel-tips__meta-item">
+                                            <span class="c-travel-tips__meta-icon">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#979797"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-travel-tips__meta-text">James Calzoni</span>
+                                        </div>
+                                        <div class="c-travel-tips__meta-item">
+                                            <span class="c-travel-tips__meta-icon">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" fill="#979797"/>
+                                                </svg>
+                                            </span>
+                                            <span class="c-travel-tips__meta-text">17</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities -->
+        <section class="l-section">
+            <div class="l-section__container">
+                <div class="c-section">
+                    <div class="c-section__header">
+                        <h2 class="c-section__title">Activities</h2>
+                        <button class="c-btn c-btn--secondary">
+                            <span class="c-btn__text">View all</span>
+                            <span class="c-btn__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 12L16 12M12 8L16 12L12 16" stroke="#7B61FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="c-section__content">
+                        <div class="c-activities">
+                            <div class="c-activities__item">
+                                <div class="c-activities__img">
+                                    <img src="assets/images/activity-sailing.png" alt="Sailing" class="c-activities__img-element">
+                                </div>
+                                <div class="c-activities__info">
+                                    <h3 class="c-activities__name">Sailing</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="c-activities__item">
+                                <div class="c-activities__img">
+                                    <img src="assets/images/activity-climbing.png" alt="Climbing" class="c-activities__img-element">
+                                </div>
+                                <div class="c-activities__info">
+                                    <h3 class="c-activities__name">Climbing</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="c-activities__item">
+                                <div class="c-activities__img">
+                                    <img src="assets/images/activity-skiing.png" alt="Skiing" class="c-activities__img-element">
+                                </div>
+                                <div class="c-activities__info">
+                                    <h3 class="c-activities__name">Skiing</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="c-activities__item">
+                                <div class="c-activities__img">
+                                    <img src="assets/images/activity-hiking.png" alt="Hiking" class="c-activities__img-element">
+                                </div>
+                                <div class="c-activities__info">
+                                    <h3 class="c-activities__name">Hiking</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section class="l-section">
+            <div class="l-section__container">
+                <div class="c-section">
+                    <div class="c-about">
+                        <div class="c-about__content">
+                            <h2 class="c-section__title">About Us</h2>
+                            <p class="c-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                            <button class="c-btn c-btn--secondary">
+															<span class="c-btn__text">View more</span>
+															<span class="c-btn__icon">
+																	<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+																			<path d="M8 12L16 12M12 8L16 12L12 16" stroke="#7B61FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+																	</svg>
+															</span>
+													  </button>
+                           </div>
+                        <div class="c-about__img">
+                            <img src="assets/images/about-us-image.png" alt="About Us" class="c-about__img-element">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="l-footer">
+        <div class="l-footer__container">
+            <div class="c-footer">
+                <div class="c-footer__main">
+                    <div class="c-footer__brand">
+                        <div class="c-footer__logo">
+                            <img src="assets/images/logo-footer.svg" alt="Travel Platform" class="c-footer__logo-img">
+                        </div>
+                        <p class="c-footer__description">We always make our customers happy by providing as many choises as possible</p>
+                        <div class="c-footer__social">
+                            <img src="assets/images/social-icons-footer.svg" alt="Social Media Links" class="c-footer__social-img">
+                        </div>
+                    </div>
+                    
+                    <div class="c-footer__links">
+                        <div class="c-footer__link-group">
+                            <h3 class="c-footer__link-title">About</h3>
+                            <ul class="c-footer__link-list">
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">About Us</a>
+                                </li>
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">Features</a>
+                                </li>
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">News</a>
+                                </li>
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">Menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="c-footer__link-group">
+                            <h3 class="c-footer__link-title">Company</h3>
+                            <ul class="c-footer__link-list">
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">Why 2rism</a>
+                                </li>
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">Partner With Us</a>
+                                </li>
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">FAQ</a>
+                                </li>
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="c-footer__link-group">
+                            <h3 class="c-footer__link-title">Support</h3>
+                            <ul class="c-footer__link-list">
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">Account</a>
+                                </li>
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">Support Center</a>
+                                </li>
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">Feedback</a>
+                                </li>
+                                <li class="c-footer__link-item">
+                                    <a href="#" class="c-footer__link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="c-footer__newsletter">
+                        <h3 class="c-footer__newsletter-title">Subscribe on our destination review newsletters</h3>
+                        <div class="c-footer__newsletter-form">
+                            <div class="c-input">
+                                <span class="c-input__icon">
+                                    <img src="assets/images/mail-icon-footer.svg" alt="Email" width="24" height="24">
+                                </span>
+                                <div class="c-input__content">
+                                    <label class="c-input__label">Your Email</label>
+                                    <input type="email" class="c-input__field" placeholder="johndoe@gmail.com">
+                                </div>
+                            </div>
+                            <button class="c-btn c-btn--primary">
+                                <span class="c-btn__icon">
+                                    <img src="assets/images/send-icon-footer.svg" alt="Send" width="48" height="48">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

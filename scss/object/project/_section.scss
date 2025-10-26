@@ -1,0 +1,444 @@
+// ===========================================
+// Section Project
+// ===========================================
+
+.c-section {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-2xl;
+
+  &__header {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: $spacing-lg; 
+    width: 100%;
+
+    @include up("tab-large") {
+      flex-direction: row; 
+      align-items: center;
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-xl; 
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-relaxed;
+    color: $color-body;
+    margin: 0;
+
+    @include up("wide") {
+      font-size: $font-size-2xl; 
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+}
+
+.c-destinations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: $spacing-md; 
+
+  @include up("tab") {
+    grid-template-columns: repeat(3, 1fr); 
+    gap: $spacing-lg;
+  }
+
+  @include up("pc") {
+    grid-template-columns: repeat(6, 1fr); 
+    gap: $spacing-xl;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm; 
+
+    @include up("wide") {
+      gap: $spacing-md; 
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 160px; 
+    border-radius: $border-radius-md;
+    overflow: hidden;
+
+    @include up("wide") {
+      height: 180px; 
+    }
+
+    &-element {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+  }
+
+  &__name {
+    font-size: $font-size-base; 
+    font-weight: $font-weight-medium;
+    line-height: $line-height-base;
+    color: $color-body;
+    margin: 0;
+
+    @include up("wide") {
+      font-size: $font-size-lg; 
+    }
+  }
+
+  &__location {
+    font-size: $font-size-xs; 
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+    color: $color-body-muted;
+    margin: 0;
+
+    @include up("wide") {
+      font-size: $font-size-sm; 
+    }
+  }
+}
+
+.c-hotels {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: $spacing-lg; 
+
+  @include up("tab") {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: $spacing-xl;
+  }
+
+  @include up("pc") {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm; 
+
+    @include up("wide") {
+      gap: $spacing-md; 
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 240px; 
+    border-radius: $border-radius-md;
+    overflow: hidden;
+
+    @include up("wide") {
+      height: 380px; 
+    }
+
+    &-element {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+  }
+
+  &__name {
+    font-size: $font-size-base; 
+    font-weight: $font-weight-medium;
+    line-height: $line-height-base;
+    color: $color-body;
+    margin: 0;
+
+    @include up("wide") {
+      font-size: $font-size-lg; 
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-sm;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-body-muted;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+      }
+    }
+
+    &-text {
+      font-size: $font-size-xs; 
+      font-weight: $font-weight-regular;
+      line-height: $line-height-base;
+      color: $color-body-muted;
+
+      @include up("wide") {
+        font-size: $font-size-sm; 
+      }
+    }
+  }
+}
+
+.c-travel-tips {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: $spacing-lg; 
+
+  @include up("tab") {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: $spacing-xl;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column; 
+    gap: $spacing-lg; 
+
+    @include up("wide") {
+      flex-direction: row; 
+      gap: $spacing-xl;
+    }
+  }
+
+  &__img {
+    width: 100%; 
+    height: 200px; 
+    border-radius: $border-radius-md;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    @include up("wide") {
+      width: 316px; 
+      height: 380px; 
+    }
+
+    &-element {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm; 
+    flex: 1;
+
+    @include up("wide") {
+      gap: $spacing-md; 
+      padding-left: $spacing-xl;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-lg; 
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-relaxed;
+    color: $color-body;
+    margin: 0;
+
+    @include up("wide") {
+      font-size: $font-size-xl; 
+    }
+  }
+
+  &__text {
+    font-size: $font-size-sm; 
+    font-weight: $font-weight-regular;
+    line-height: $line-height-relaxed;
+    color: $color-body-muted;
+    margin: 0;
+
+    @include up("wide") {
+      font-size: $font-size-base; 
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: $spacing-sm; 
+    margin-top: auto;
+
+    @include up("wide") {
+      flex-direction: row; 
+      align-items: center;
+      gap: $spacing-lg;
+    }
+  }
+
+  &__meta-item {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-body-muted;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+      }
+    }
+
+    &-text {
+      font-size: $font-size-xs;
+      font-weight: $font-weight-regular;
+      line-height: $line-height-base;
+      color: $color-body-muted;
+    }
+  }
+
+  &__meta-text {
+    font-size: $font-size-xs; 
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+    color: $color-body-muted;
+
+    @include up("wide") {
+      font-size: $font-size-xs; 
+    }
+  }
+}
+
+.c-activities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: $spacing-md; 
+
+  @include up("tab") {
+    grid-template-columns: repeat(3, 1fr); 
+    gap: $spacing-lg;
+  }
+
+  @include up("pc") {
+    grid-template-columns: repeat(4, 1fr); 
+    gap: $spacing-xl;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm; 
+
+    @include up("wide") {
+      gap: $spacing-md; 
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 200px; 
+    border-radius: $border-radius-md;
+    overflow: hidden;
+
+    @include up("wide") {
+      height: 380px; 
+    }
+
+    &-element {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+  }
+
+  &__name {
+    font-size: $font-size-base; 
+    font-weight: $font-weight-medium;
+    line-height: $line-height-base;
+    color: $color-body;
+    margin: 0;
+
+    @include up("wide") {
+      font-size: $font-size-lg; 
+    }
+  }
+}
+
+.c-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-xl;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: $spacing-2xl;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xl;
+  }
+
+  &__text {
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-loose;
+    color: #5B5B5B;
+    margin: 0;
+  }
+
+  &__img {
+    width: 100%;
+    height: 488px;
+    border-radius: $border-radius-md;
+    overflow: hidden;
+
+    &-element {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+// ===========================================
+// Footer Layout
+// ===========================================
+
+.l-footer {
+  background-color: $color-footer-bg;
+  padding: $spacing-3xl 0; 
+
+  @include up("wide") {
+    padding: 120px 0; 
+  }
+}
+

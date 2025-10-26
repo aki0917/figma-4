@@ -1,0 +1,15 @@
+{
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss/style.scss css/style.css --style=compressed",
+    "dev": "sass scss/style.scss css/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["travel", "platform", "figma", "scss", "gsap"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

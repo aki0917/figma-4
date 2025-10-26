@@ -1,0 +1,20 @@
+// ===========================================
+// Section Layout
+// ===========================================
+
+.l-section {
+  padding: $spacing-xl 0; 
+
+  &:last-child {
+    padding-bottom: $spacing-xl; 
+  }
+
+  @include up("wide") {
+    padding: $spacing-3xl 0; 
+
+    &:last-child {
+      padding-bottom: $spacing-3xl; 
+    }
+  }
+}
+
