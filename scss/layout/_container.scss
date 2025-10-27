@@ -7,10 +7,13 @@
   margin: 0 auto;
   padding: 0 $spacing-md;
 
-  
+
+  @include up("tab") {
+    max-width: 768px; 
+  }
 
   @include up("pc") {
-    max-width: 1024px; 
+    max-width: 1200px; 
   }
 
   @include up("pc-large") {

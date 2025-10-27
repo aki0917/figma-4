@@ -27,8 +27,8 @@ function initAnimations() {
     gsap.set('.c-hotels__item', { opacity: 0, y: 50 });
     gsap.set('.c-travel-tips__item', { opacity: 0, y: 50 });
     gsap.set('.c-activities__item', { opacity: 0, y: 50 });
-    gsap.set('.c-about__content', { opacity: 0, x: -50 });
-    gsap.set('.c-about__img', { opacity: 0, x: 50 });
+    gsap.set('.c-about__content', { opacity: 0, y: 50 });
+    gsap.set('.c-about__img', { opacity: 0, y: 50 });
 
     // Hero section animation
     const heroTimeline = gsap.timeline({ delay: 0.5 });
@@ -138,7 +138,7 @@ function initAnimations() {
             toggleActions: 'play none none reverse'
         },
         opacity: 1,
-        x: 0,
+        y: 0,
         duration: 1,
         ease: 'power2.out'
     });
@@ -151,7 +151,7 @@ function initAnimations() {
             toggleActions: 'play none none reverse'
         },
         opacity: 1,
-        x: 0,
+        y: 0,
         duration: 1,
         ease: 'power2.out'
     });
